@@ -38,7 +38,19 @@ function getInputValue() {
         'f1307',
         'f1308',
         'f1303',
-        'f1304'
+        'f1304',
+        'g601',
+        'g602',
+        'g603',
+        'g604',
+        'g605',
+        'g606',
+        'g1101',
+        'g1102',
+        'g1103',
+        'g1104',
+        'g1105',
+        'g1106'
 
     ];
 
@@ -80,20 +92,30 @@ function getInputValue() {
         '13th floor New Building',
         '13th floor New Building',
         '13th floor New Building',
-        '13th floor New Building'
+        '13th floor New Building',
+        '6th floor New Building',
+        '6th floor New Building',
+        '6th floor New Building',
+        '6th floor New Building',
+        '6th floor New Building',
+        '6th floor New Building',
+        '11th floor New Building',
+        '11th floor New Building',
+        '11th floor New Building',
+        '11th floor New Building',
+        '11th floor New Building',
+        '11th floor New Building'
     ];
 
     let value = document.getElementById("userInput").value;
-    let inputValue = value.toLowerCase();
+    let inputValue = value.toLowerCase().trim();
 
     if (code.includes(inputValue)) {
         let index = code.indexOf(inputValue);
         locationValue = location[index];
-        alert(locationValue + ' playan');
+        alert(locationValue + " playan!");
     } else {
-        alert("wrong location code!")
+        alert("Wrong location code bn!")
     }
-
-
 }
 
