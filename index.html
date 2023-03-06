@@ -18,12 +18,13 @@
         <form method="post">
 
             <div class="textField">
-                <input type="text" required>
+                <input type="text" id="userInput" required>
                 <span></span>
                 <lable>Enter location code</lable>
             </div>
 
-            <input type="submit" value="Find">
+            <input type="submit" value="Find" onclick="getInputValue();">
+
         </form>
     </div>
 
@@ -31,7 +32,5 @@
 
     <script src="javascript/runtime.js"></script>
 </body>
-
-
 
 </html>
